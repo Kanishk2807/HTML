@@ -3,167 +3,584 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historic Kings Who Shaped India</title>
-    <style>
-        body{
-            background-image: url(bg3.jpg);
-            background-size: cover;
-        }
- h1{
-    background-color: blue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: aliceblue;
-    font-size: larger;
-    text-align: center; 
-     margin: 20px auto; 
-     width: 80%;
-     padding: 20px
-     
-}
-a{
-            margin: 10px;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;
-            color: aliceblue;
+    <title>Responsive  website for car selling  </title>
 
-        }
-        a:hover{
-            background-color: rgb(22, 17, 175);
-            padding: 10px;
-            border-radius: 5px;
-            border-bottom: 2px solid rgb(73, 3, 110);
-        }
-       
-p {
-            margin-top: 40px;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: larger;
-            font-style: oblique;
-            font-weight: bolder;
-            text-align: center; 
-            margin: 20px auto;
-            width: 90%;
-            padding: 10px;
-            color: #fbf8f8;
-            line-height: 2;
-            font-size: 200%;
-        }
-        #c{
-            color:  #1edc50;
-        }
-        #a{
-            color: #0b0d93;
-        }
-        #b{
-            color: #651068;
-        }
-        #container{
-        width: 400px;
-        height: 600px;
-        border: 1px solid black;
-        box-shadow: 10px 10px 10px black;
-        border-radius: 20px;
-        /* background-image: url(mharanapratap.jpeg); */
-        /* background-size: cover; */
-        background-color: aliceblue;
-              }
-        #box{
-            width: 400px;
-        height: 600px;
-        border: 1px solid black;
-        box-shadow: 10px 10px 10px black;
-        border-radius: 20px;
-        /* background-image: url(shivajimaharaj.jpeg); */
-        background-size: cover;
-        background-color: aliceblue;
-        }
-        #wall{
-            width: 400px;
-        height: 600px;
-        border: 1px solid black;
-        box-shadow: 10px 10px 10px black;
-        border-radius: 20px;
-        /* background-image: url(prithvirajchauhan.jpeg); */
-       
-        background-color: aliceblue;
-        }
-        #maindiv{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-         }
-         img{
-            border-radius: 20px;
-         }
-         img:hover{
-            border: 5px solid rgb(245, 233, 65);
-         }
-         #x{
-            margin-bottom: 30%;
-            font-size: 20px;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: bolder;
-            font-style:italic;
-            margin: 20px auto;
-            width: 90%;
-            padding: 10px;
-            color: #0e0d0d;
-         }
-         #y{
-            margin-bottom: 40%;
-            font-size: 17px;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: 5000;
-            font-style:italic;
-            margin: 20px auto;
-            width: 90%;
-            padding: 10px;
-            color: #000000;
-         }
-         #z{
-            margin-bottom: 40%;
-            font-size: 17px;
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: 5000;
-            font-style:italic;
-            margin: 20px auto;
-            width: 90%;
-            padding: 10px;
-            color: #000000;
-  
-         }
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-    </style>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
-<h1>Eternal Heroes of Indian History </h1>
-<nav>
-    <img src="webking.jpeg" height="90px" width="90px" alt="crown image">
-    <a href="history.html">History</a>
-    <a href="contact.html">Contacts</a>
-</nav>
-<p><span id="c"> Eternal heroes </span>, the valiant kings and warriors of India, <span id="a">epitomize unmatched bravery and indomitable spirit </span>. They forged a legacy of honor, resilience, and unwavering courage that continues to inspire and <span id="b"> the hearts of millions across generations.</s⁰an></p>
-    <div id="maindiv">
-        <div id="container">
-            <img src="mharanapratap.jpeg" height="300px" width="400" alt="img">
-        <p id="x">Maharana Pratap, born on May 9, 1540, in Kumbhalgarh, Rajasthan, is one of the most revered heroes in Indian history. He was the 13th king of Mewar in the present-day state of Rajasthan and belonged to the Sisodia clan of Rajputs. </p>
+ <header class="header">
+   <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>RK</span>Wheels</a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#vehicles">vehicles</a>
+        <a href="#services">services</a>
+        <a href="#featured">Featured</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contacts</a>
+    </nav>
+
+    <div id="login-btn">
+        <button class="btn">Login</button>
+
+        <i class="far fa-user"></i>
+    </div>
+ </header>
+ <div class="login-form-container">
+    <span class="fas fa-times" id="close-login-form"></span>
+    <form action="">
+        <h3>user login</h3>
+        <input type="email" placeholder="email" class="box">
+        <input type="password" placeholder="password" class="box">
+        <p>forget your password <a href="#">Click here</a></p>
+        <input type="submit" value="login now" class="btn">
+        <p>or login  with</p>
+        <div class="buttons">
+            <a href="#" class="btn">Google</a>
+            <a href="#" class="btn">Facebook</a>
         </div>
-            <div id="box">
-                <img src="shivajimaharaj.jpeg" height="300px" width="400" alt="img">
-               <p id="y">Chhatrapati Shivaji Maharaj, born on February 19, 1630, in the hill-fort of Shivneri, near the city of Junnar in Pune district, Maharashtra, is one of the most iconic and revered figures in Indian history. He was the founder of the Maratha Empire and is celebrated for his innovative military tactics, administrative skills, and unwavering dedication to his people and culture. </p>
+        <p>don't have an account <a href="#">create one</a></p>
+    </form>
+ </div>
+
+ <section class="home" id="home">
+    <h1 class="home-parallax" data-speed="-2">find your car</h1>
+    <img class="home-parallax" data-speed="5" src="cars.jpeg"  alt="img">
+    <a href="#" class="btn home-parallax" data-speed="7">Explore cars</a>
+ </section>
+    
+<section class="icons-container">
+    <div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>150+</h3>
+            <p>Branches</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3>4770+</h3>
+            <p>cars sold</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-user"></i>
+        <div class="content">
+            <h3>590+</h3>
+            <p>happy clients</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3>890+</h3>
+            <p>new cars</p>
+        </div>
+    </div>
+</section>
+<section class="vehicles" id="vehicles">
+    <h1 class="heading">popular <span>vehicles</span></h1>
+
+    <div class=" swiper vehicles-slider">
+        <div class="swiper-wrapper">
+            <div class=" swiper-slide box">
+                <img src="car1.jpeg" alt="img">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"><span>Price:</span>$650000/-</div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span>2024
+                        <span class="fas fa-circle"></span>automatic
+                        <span class="fas fa-circle"></span>petrol
+                        <span class="fas fa-circle"></span>3000mph
+                    </p>
+                    
+                    <a href="#" class="btn">check out</a>
+                </div>
             </div>
-                
- <div id="wall">
-<img src="prithvirajchauhan.jpeg" height="300px" width="400" alt="img">
-<p id="z">Prithviraj Chauhan, born in 1166 CE, was a legendary king from the Chauhan (Chahamana) dynasty, ruling the kingdom of Ajmer and Delhi in northern India. Known for his bravery, valor, and chivalry, Prithviraj Chauhan is celebrated as one of the last Hindu kings to resist the invasions of the Delhi Sultanate. </p>
-                 </div>
-        
+            <div class="swiper-slide box">
+                <img src="car2.jpeg" alt="img">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"><span>Price:</span>$700000/-</div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span>2024
+                        <span class="fas fa-circle"></span>automatic
+                        <span class="fas fa-circle"></span>petrol
+                        <span class="fas fa-circle"></span>5000mph
+                    </p>
+                    
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="car3.jpeg" alt="img">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"><span>Price:</span>$800000/-</div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span>2024
+                        <span class="fas fa-circle"></span>automatic
+                        <span class="fas fa-circle"></span>electric
+                        <span class="fas fa-circle"></span>45000mph
+                    </p>
+                    
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="car4.jpeg" alt="img">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"><span>Price:</span>$990000/-</div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span>2024
+                        <span class="fas fa-circle"></span>automatic
+                        <span class="fas fa-circle"></span>petrol
+                        <span class="fas fa-circle"></span>760000mph
+                    </p>
+                    
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="car5.jpeg" alt="img">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"><span>Price:</span>$6000000/-</div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span>2024
+                        <span class="fas fa-circle"></span>automatic
+                        <span class="fas fa-circle"></span>electric
+                        <span class="fas fa-circle"></span>36000mph
+                    </p>
+                    
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="newcar1.jpeg" alt="img">
+                <div class="content">
+                    <h3>new model</h3>
+                    <div class="price"><span>Price:</span>$1150000/-</div>
+                    <p>
+                        new
+                        <span class="fas fa-circle"></span>2024
+                        <span class="fas fa-circle"></span>automatic
+                        <span class="fas fa-circle"></span>petrol
+                        <span class="fas fa-circle"></span>540000mph
+                    </p>
+                    
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<section class="services" id="services">
+
+    <h1 class="heading">our <span>services</span></h1>
+    <div class="box-container">
+        <div class="box">
+          <i class="fas fa-car"></i>
+          <h3>car selling</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia minima ab provident qui distinctio tenetur quod non, tempora vel nobis iure rerum nulla earum temporibus reiciendis at cum, recusandae excepturi!</p>
+          <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <i class="fas fa-tools"></i>
+            <h3>parts repair</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia minima ab provident qui distinctio tenetur quod non, tempora vel nobis iure rerum nulla earum temporibus reiciendis at cum, recusandae excepturi!</p>
+            <a href="#" class="btn">read more</a>
+          </div>
+          <div class="box">
+            <i class="fas fa-car-crash"></i>
+            <h3>car insurence</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia minima ab provident qui distinctio tenetur quod non, tempora vel nobis iure rerum nulla earum temporibus reiciendis at cum, recusandae excepturi!</p>
+            <a href="#" class="btn">read more</a>
+          </div>
+          <div class="box">
+            <i class="fas fa-car-battery"></i>
+            <h3>battery replacement</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia minima ab provident qui distinctio tenetur quod non, tempora vel nobis iure rerum nulla earum temporibus reiciendis at cum, recusandae excepturi!</p>
+            <a href="#" class="btn">read more</a>
+          </div>
+          <div class="box">
+            <i class="fas fa-gas-pump"></i>
+            <h3>oil change</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia minima ab provident qui distinctio tenetur quod non, tempora vel nobis iure rerum nulla earum temporibus reiciendis at cum, recusandae excepturi!</p>
+            <a href="#" class="btn">read more</a>
+          </div>
+          <div class="box">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 support</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia minima ab provident qui distinctio tenetur quod non, tempora vel nobis iure rerum nulla earum temporibus reiciendis at cum, recusandae excepturi!</p>
+            <a href="#" class="btn">read more</a>
+          </div>
+    </div>
+</section>
+
+<section class="featured" id="featured">
+    <h1 class="heading">
+        <span>featured</span> cars
+    </h1>
+    <div class=" swiper featured-slider">
+        <div class=" swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="newcar10.jpeg" alt="car">
+                <h3>New models</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$55000/-</div>
+                <a href="#" class="btn">check out</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="newcar9.jpeg" alt="car">
+                <h3>New models</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$65000/-</div>
+                <a href="#" class="btn">check out</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="newcar8.jpeg" alt="car">
+                <h3>New models</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$75000/-</div>
+                <a href="#" class="btn">check out</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="newcar7.jpeg" alt="car">
+                <h3>New models</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$86000/-</div>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="newcar6.jpeg" alt="car">
+                <h3>New models</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$99000/-</div>
+                <a href="#" class="btn">check out</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="newcar5.jpeg" alt="car">
+                <h3>New models</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$88000/-</div>
+                <a href="#" class="btn">check out</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="new7.jpeg" alt="car">
+                <h3>New models</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$456000/-</div>
+                <a href="#" class="btn">check out</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="newcar1.jpeg" alt="car">
+                <h3>New models</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">$995000/-</div>
+                <a href="#" class="btn">check out</a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+    </div>
+</section>
+
+<section class="newsletter">
+    <h3>subscribe for latest updates </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias porro ducimus atque ipsum explicabo optio dolore veniam, voluptate eos fuga ratione nihil molestiae itaque quidem harum iure libero illo incidunt.</p>
+    <form action="">
+        <input type="email" placeholder="enter your email" id="" >
+        <input type="submit" class="subscribe" name="" id="" >
+    </form>
+</section>
+
+<section class="reviews" id="reviews">
+    <h1 class="heading">client <span>Review</span></h1>
+    <div class="swiper reviews-slider">
+        <div class=" swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="rev.jpeg" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi amet earum aperiam blanditiis, atque minus fugiat at culpa pariatur odit, iste a, id laudantium ipsum optio tempora expedita nisi.</p>
+                    <h3>cris</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="rev1.jpeg" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi amet earum aperiam blanditiis, atque minus fugiat at culpa pariatur odit, iste a, id laudantium ipsum optio tempora expedita nisi.</p>
+                    <h3>caption </h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="rev2.jpeg" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi amet earum aperiam blanditiis, atque minus fugiat at culpa pariatur odit, iste a, id laudantium ipsum optio tempora expedita nisi.</p>
+                    <h3>tonny</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="rev3.jpeg" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi amet earum aperiam blanditiis, atque minus fugiat at culpa pariatur odit, iste a, id laudantium ipsum optio tempora expedita nisi.</p>
+                    <h3>natasa</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="rev4.jpeg" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi amet earum aperiam blanditiis, atque minus fugiat at culpa pariatur odit, iste a, id laudantium ipsum optio tempora expedita nisi.</p>
+                    <h3> bill gates</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="rev5.jpeg" alt="">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi amet earum aperiam blanditiis, atque minus fugiat at culpa pariatur odit, iste a, id laudantium ipsum optio tempora expedita nisi.</p>
+                    <h3> mark</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+
+
+<section class="contact" id="contact">
+    <h1 class="heading"><span>contact</span> us</h1>
+    <div class="row">
+        <iframe class="map box" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14010.76019109906!2d77.21342086717482!3d28.609073895665112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2db961be393%3A0xf6c7ef5ee6dd10ae!2sIndia%20Gate%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1717945894832!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        <form class="form box" action="">
+            <h3>get in touch</h3>
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+            <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>our branches</h3>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>India</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>France</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Germany</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>Europe</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>australia</a>
         </div>
 
 
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i>home</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>vehicle</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>services</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>featured</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>reviews</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>contact</a>
+        </div>
+ 
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#"><i class="fas fa-phone"></i>+159-494-118</a>
+            <a href="#"><i class="fas fa-phone"></i>+154-474-918</a>
+            <a href="#"><i class="fas fa-envelope"></i>krajput@gmail.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i>delhi 11111</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+        </div>
+    </div>
+    <div class="credit">Create by kanishk Rajput | all right reserved!</div>
+</section>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>
